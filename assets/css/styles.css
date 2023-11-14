@@ -128,7 +128,6 @@ span {
 form {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -185,4 +184,48 @@ button {
 }
 button:active {
     transform: scale(0.95);
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        max-width: 600px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 2.3rem;
+    }
+   
+    .wrapper {
+        width: 100%;
+        padding: 1rem 2rem;
+        position: absolute;
+        top: 70%;
+    }
+    #counter {
+        border-radius: 25rem;
+        padding: 2rem;
+        width: 30rem;
+        max-width: 30rem;
+        height: 30rem;
+        max-height: 30rem;
+        text-align: center;
+        font-size: 15rem;
+        border: 1rem solid cyan;
+    }
+    
 }
